@@ -4,7 +4,7 @@ use curv::arithmetic::traits::*;
 use kzen_paillier::*;
 
 mod helpers;
-use helpers::*;
+use crate::helpers::*;
 
 pub fn bench_mul(b: &mut Bencher) {
     let p: &BigInt = &BigInt::from_str_radix(P2048, 10).unwrap();
